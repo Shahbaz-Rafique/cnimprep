@@ -36,3 +36,109 @@
     transform: rotate(360deg);
   }
 }
+
+/* HOME BODY CSS */
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 1rem;
+}
+.left-column1{
+  flex: 1;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .left-column,
+  .right-column {
+    flex: 1 1 50%;
+  }
+  .left-column1 {
+    flex: 1 1 50%;
+  }
+}
+.Title{
+  font-size: 60px;
+  font-weight: bold;
+}
+.left-column{
+  margin-left: 35px;
+  margin-top: 80px;
+}
+.left-column1{
+  margin-left: 35px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .Title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -70px;
+  }
+  .joinover{
+    width: 100%;
+    text-align: justify;
+  }
+  .smarttitle{
+    padding-left: 15px;
+  }
+  .signup{
+    margin-left:55px;
+  }
+  .pic{
+    width: "450px";
+    height: "250px";
+    margin-left: 17px;
+  }
+  .left-column{
+    margin-left: -2px;
+  }
+  .textcon{
+    padding: 20px;
+  }
+  .imgbottom{
+    width: "400px";
+    height: "400px";
+    margin-left: 28px;
+    box-shadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px";
+  }
+}
+.pic{
+   width: "760px";
+   height: "500px"
+}
+.textcon{
+  text-align: "justify";
+  font-size: "20px";
+  color: "#0e225a"
+}
+
+/* Column Layout of Features */
+.col-column {
+  float: left;
+  width: 50%;
+  margin-top: 80px;
+}
+
+/* Clear floats after the columns */
+.column-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-column {
+    width: 100%;
+  }
+  .col-column.imgquizes{
+    width:"200px";
+    height:"200px"
+  }
+}
