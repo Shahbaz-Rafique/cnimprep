@@ -50,7 +50,7 @@ export default function Features() {
               the highest level of accuracy. New! Technology Enhanced Item (TEI)
               Questions Included! Try one now.
             </h1>
-            <a href="">
+            <a href="/free-practice-quiz">
               <button
                 class="text-white font-bold py-2 px-4 rounded signup"
                 style={{

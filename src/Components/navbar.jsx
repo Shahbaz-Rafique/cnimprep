@@ -23,7 +23,7 @@ const Header = () => {
               className="self-center text-xl font-semibold whitespace-nowrap:text-white"
               style={{ color: "white", fontSize: "27px" }}
             >
-              EMT<span style={{ color: "gray" }}>prep</span>
+              CNIM<span style={{ color: "gray" }}>prep</span>
             </span>
           </NavLink>
           <div
@@ -83,7 +83,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="#"
+                  to="/pricing"
                   style={{ color: "#fff" }}
                   className="block py-2 pl-3 pr-4 text-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -101,7 +101,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="#"
+                  to="/Contact"
                   style={{ color: "#fff" }}
                   className="block py-2 pl-3 pr-4 text-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >

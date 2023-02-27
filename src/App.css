@@ -75,6 +75,7 @@
   margin-top: 80px;
 }
 
+
 @media screen and (max-width: 800px) {
   .Title{
     font-size: 35px;
@@ -142,3 +143,50 @@
     height:"200px"
   }
 }
+
+.quiz-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quiz-left-column {
+  width: 30%;
+}
+
+.quiz-right-column {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .quiz-left-column {
+    width: 100%;
+  }
+
+  .quiz-right-column {
+    width: 100%;
+  }
+}
+
+.myButton {
+  width: 300px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.myButton:hover {
+  background-color: lightgrey;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
