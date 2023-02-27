@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cnimprep/static/css/main.19b6c4cb.css",
+    "main.js": "/cnimprep/static/js/main.ce59b5ed.js",
+    "static/js/787.ec704a7a.chunk.js": "/cnimprep/static/js/787.ec704a7a.chunk.js",
+    "index.html": "/cnimprep/index.html",
+    "main.19b6c4cb.css.map": "/cnimprep/static/css/main.19b6c4cb.css.map",
+    "main.ce59b5ed.js.map": "/cnimprep/static/js/main.ce59b5ed.js.map",
+    "787.ec704a7a.chunk.js.map": "/cnimprep/static/js/787.ec704a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19b6c4cb.css",
+    "static/js/main.ce59b5ed.js"
+  ]
+}
