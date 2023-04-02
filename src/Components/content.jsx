@@ -1,7 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "../App.css";
-import Button from "react-bootstrap/Button";
-import { NavLink } from "react-bootstrap";
 import Carousel from "react-elastic-carousel";
 import Footer from "./footer";
 
@@ -42,7 +40,7 @@ const Content = () => {
       {/* HomePage First Two Columns */}
       <div
         className="container1"
-        style={{ marginTop: "60px", background: "url(/assets/graph.jpg)" }}
+        style={{ background: "url(/assets/graph.jpg)" }}
       >
         <div className="left-column1">
           <h1 className="Title" style={{ color: "#0e225a" }}>

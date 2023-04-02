@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -63,50 +64,74 @@ const Header = () => {
               style={{ backgroundColor: "#223345" }}
             >
               <li>
-                <NavLink
+                <Link
                   to="/features"
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  lassName="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                   aria-current="page"
-                  style={{ color: "#fff" }}
+                  style={{
+                    textDecoration: "none",
+                    marginRight: "8px",
+                    color: "#fff",
+                  }}
                 >
                   Features
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   to="#"
-                  style={{ color: "#fff" }}
-                  className="block py-2 pl-3 pr-4 text-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  lassName="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  style={{
+                    textDecoration: "none",
+                    marginRight: "8px",
+                    color: "#fff",
+                  }}
                 >
                   Resources
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   to="/pricing"
-                  style={{ color: "#fff" }}
-                  className="block py-2 pl-3 pr-4 text-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  lassName="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  style={{
+                    textDecoration: "none",
+                    marginRight: "8px",
+                    color: "#fff",
+                  }}
                 >
                   Pricing
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   to="#"
-                  style={{ color: "#fff" }}
-                  className="block py-2 pl-3 pr-4 text-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  lassName="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  style={{
+                    textDecoration: "none",
+                    marginRight: "8px",
+                    color: "#fff",
+                  }}
                 >
                   About
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   to="/Contact"
-                  style={{ color: "#fff" }}
-                  className="block py-2 pl-3 pr-4 text-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  lassName="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  style={{
+                    textDecoration: "none",
+                    marginRight: "8px",
+                    color: "#fff",
+                  }}
                 >
                   Contact
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </div>

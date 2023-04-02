@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./navbar";
 import Content from "./content";
+import Head from "./head";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <Head />
       <Content />
     </>
   );

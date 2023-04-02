@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Shahbaz-Rafique.github.io/cnimprep",
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +13,10 @@
     "fa-icons": "^0.2.0",
     "flowbite": "^1.6.3",
     "mdb-react-ui-kit": "^5.1.0",
+    "mdbreact": "^5.2.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.0",
+    "react-bootstrap": "^2.7.2",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
     "react-fontawesome": "^1.7.1",
@@ -25,8 +26,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "npm run deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

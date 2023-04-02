@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import "../App.css";
 import Footer from "./footer";
+import Header from "./navbar";
 
-export default function Signupdetail() {
+export default function PricingContent() {
   const dates = new Date();
   return (
     <>
@@ -23,7 +24,7 @@ export default function Signupdetail() {
             paddingBottom: "30px",
           }}
         >
-          SignUp
+          Prining
         </h1>
       </div>
       <div className="plan">
@@ -320,206 +321,7 @@ export default function Signupdetail() {
       </div>
       <br />
       <hr />
-      <div className="plan">
-        <h1
-          style={{
-            textAlign: "center",
-            fontWeight: "600",
-            fontSize: "20px",
-            marginTop: "30px",
-          }}
-        >
-          2. Choose Your Exam Level
-        </h1>
-        <h1 style={{ textAlign: "center", padding: "5px" }}>
-          Pricing is same for all exam level{" "}
-        </h1>
-        <div style={{ textAlign: "center" }}>
-          <a href="" style={{ marginRight: "10px" }}>
-            <button
-              id="EMR"
-              class="text-black font-normal py-2 px-4 rounded border"
-              style={{ marginTop: "24px", backgroundColor: "#fff" }}
-              onMouseOver={() => {
-                document.getElementById("EMR").style.backgroundColor =
-                  "#364e7a";
-                document.getElementById("EMR").style.color = "#fff";
-              }}
-              onMouseLeave={() => {
-                document.getElementById("EMR").style.backgroundColor = "#fff";
-                document.getElementById("EMR").style.color = "black";
-              }}
-            >
-              Emergency Medical Responder
-            </button>
-          </a>
-          <a href="">
-            <button
-              id="EMT"
-              class="text-black font-normal py-2 px-4 rounded border"
-              style={{ marginTop: "24px", backgroundColor: "#fff" }}
-              onMouseOver={() => {
-                document.getElementById("EMT").style.backgroundColor =
-                  "#364e7a";
-                document.getElementById("EMT").style.color = "#fff";
-              }}
-              onMouseLeave={() => {
-                document.getElementById("EMT").style.backgroundColor = "#fff";
-                document.getElementById("EMT").style.color = "black";
-              }}
-            >
-              Emergency Medical Technitian
-            </button>
-          </a>
-        </div>
-      </div>
-
-      <div style={{ textAlign: "center" }}>
-        <a href="" style={{ marginRight: "10px" }}>
-          <button
-            id="AEMT"
-            class="text-black font-normal py-2 px-4 rounded border"
-            style={{ marginTop: "24px", backgroundColor: "#fff" }}
-            onMouseOver={() => {
-              document.getElementById("AEMT").style.backgroundColor = "#364e7a";
-              document.getElementById("AEMT").style.color = "#fff";
-            }}
-            onMouseLeave={() => {
-              document.getElementById("AEMT").style.backgroundColor = "#fff";
-              document.getElementById("AEMT").style.color = "black";
-            }}
-          >
-            Advanced Emergency Medical Technician
-          </button>
-        </a>
-        <a href="">
-          <button
-            id="Par"
-            class="text-black font-normal py-2 px-4 rounded border"
-            style={{ marginTop: "24px", backgroundColor: "#fff" }}
-            onMouseOver={() => {
-              document.getElementById("Par").style.backgroundColor = "#364e7a";
-              document.getElementById("Par").style.color = "#fff";
-            }}
-            onMouseLeave={() => {
-              document.getElementById("Par").style.backgroundColor = "#fff";
-              document.getElementById("Par").style.color = "black";
-            }}
-          >
-            Paramedic
-          </button>
-        </a>
-      </div>
-
-      <div
-        className="interst"
-        style={{
-          marginTop: "30px",
-          backgroundColor: "#f7f8fa",
-          height: "Auto",
-        }}
-      >
-        <h1
-          style={{
-            textAlign: "center",
-            paddingTop: "8px",
-            paddingBottom: "9px",
-          }}
-        >
-          Intersting in{" "}
-          <span style={{ color: "#374f7b", fontWeight: "bold" }}>
-            Group Pricing?
-          </span>{" "}
-          Email us at info@emtprep.com
-        </h1>
-      </div>
-
-      <div className="account">
-        <h1
-          style={{
-            textAlign: "center",
-            fontWeight: "600",
-            fontSize: "20px",
-            marginTop: "20px",
-          }}
-        >
-          3. Create EMT.prep Account
-        </h1>
-        <div class="min-h-screen flex flex-col">
-          <div class="container max-w-lg mx-auto flex-1 flex flex-col items-center justify-center px-1">
-            <div class="bg-white px-10 py-8 rounded text-black w-full">
-              <input
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="fullname"
-                placeholder="Full Name"
-              />
-              <input
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="email"
-                placeholder="Email"
-              />
-              <input
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="email"
-                placeholder="Confirm Email"
-              />
-              <input
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="password"
-                placeholder="Password"
-              />
-              <input
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="confirm_password"
-                placeholder="Confirm Password"
-              />
-              <input type="checkbox" /> I have read and Agree to EMTPrep{" "}
-              <a
-                href=""
-                style={{
-                  fontweight: "bold",
-                  color: "#364e7a",
-                  textDecoration: "underline",
-                }}
-              >
-                Terms and Conditions
-              </a>{" "}
-              and{" "}
-              <a
-                href=""
-                style={{
-                  fontweight: "bold",
-                  color: "#364e7a",
-                  textDecoration: "underline",
-                }}
-              >
-                MemberShip Agreement
-              </a>
-              .
-              <br />
-              <input type="checkbox" /> I would like to recievce EMT Updated,
-              relative news, and Offer from Classward, LLC.
-              <button
-                style={{
-                  backgroundColor: "#11a0fc",
-                  marginTop: "20px",
-                  color: "white",
-                  fontWeight: "bold",
-                }}
-                type="submit"
-                class="w-full text-center py-3 rounded bg-blue text-black hover:bg-green-dark focus:outline-none my-1"
-              >
-                Create Account & Checkout
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </>
   );
 }

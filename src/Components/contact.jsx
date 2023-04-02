@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Card } from "react-bootstrap";
+import React from "react";
 import "../App.css";
 import Footer from "./footer";
 import Header from "./navbar";
 
 export default function Contact() {
-  const dates = new Date();
   return (
     <>
       <Header />
