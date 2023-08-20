@@ -37,156 +37,434 @@
   }
 }
 
-/* HOME BODY CSS */
-.container1 {
+/* Navbar */
+.brandlogo{
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+.brandlogo img{
+  width: 50px;
+  height: 50px;
+}
+.brandlogo h2{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  color: white;
+}
+.navbarfull{
+  background-image: url('../public/assets/navbar.jpg');
+}
+.links{
+  padding-bottom:5px;
+}
+.links ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: -100px;
 }
 
-.left-column,
-.right-column {
-  flex: 1;
-  padding: 1rem;
-}
-.left-column1{
-  flex: 1;
-  padding: 1rem;
+.links ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 40px;
 }
 
-@media screen and (max-width: 800px) {
-  .left-column,
-  .right-column {
-    flex: 1 1 50%;
-  }
-  .left-column1 {
-    flex: 1 1 50%;
-  }
+.links ul li a:hover{
+  color: rgb(126, 192, 47);
 }
-.Title{
+
+.links-mobile ul{
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.links-mobile ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 30px;
+}
+
+.links-mobile ul li a:hover{
+  color: rgb(126, 192, 47);
+}
+.links-mobile{
+  display:none;
+}
+.header{
+  background-image: url('https://i.pinimg.com/originals/6f/72/35/6f7235447ca2c37edf7df110269d363b.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1{
+  text-align: center;
+  color: white;
+  padding-top: 11%;
+  padding-bottom: 11%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   font-size: 60px;
+}
+
+.content{
+  margin-top: -10px;
+}
+
+.content h2{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 5px;
+  background-color: #DAA520;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.modeB{
+  margin-top: 5%;
+}
+
+.news{
+  width:70%;
+  justify-content: center;
+  text-align: left;
+}
+
+.news h3{
+  color:rgb(40, 48, 55);
+  font-weight: 650;
+}
+
+.more-news{
+  width:70%;
+  justify-content: center;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.more-news h3{
+  color:rgb(40, 48, 55);
+  font-weight: 650;
+}
+
+.carouselimg{
+  height:320px;
+}
+
+.carouselcard{
+  padding:20px;
+  border-radius: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bookhead{
+  background-image: url('https://newgenluxury.com/wp-content/uploads/2020/08/Bellagio-Las-Vegas.jpg');
+  position: relative;
+  width:100%;
+  height:220px;
+  background-size: cover;
+}
+
+.contacthead{
+  background-image: url('https://newgenluxury.com/wp-content/uploads/2020/08/Bellagio-Las-Vegas.jpg');
+  position: relative;
+  width:100%;
+  height:220px;
+  background-size: cover;
+}
+
+.abouthead{
+  background-image: url('https://newgenluxury.com/wp-content/uploads/2020/08/Bellagio-Las-Vegas.jpg');
+  position: relative;
+  width:100%;
+  height:220px;
+  background-size: cover;
+}
+
+.newshead{
+  background-image: url('https://newgenluxury.com/wp-content/uploads/2020/08/Bellagio-Las-Vegas.jpg');
+  position: relative;
+  width:100%;
+  height:220px;
+  background-size: cover;
+}
+
+.imprinthead{
+  background-image: url('https://newgenluxury.com/wp-content/uploads/2020/08/Bellagio-Las-Vegas.jpg');
+  position: relative;
+  width:100%;
+  height:220px;
+  background-size: cover;
+}
+
+
+.newshead::after {
+  content: "News details";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(126, 192, 47);
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(62, 139, 188,0.7);
+  z-index: 1;
+  padding-top: 5%;
+}
+
+.imprinthead::after {
+  content: "Impressum";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(126, 192, 47);
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(62, 139, 188,0.7);
+  z-index: 1;
+  padding-top: 5%;
+}
+
+.bookhead::after {
+  content: "Book Now!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(126, 192, 47);
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(62, 139, 188,0.7);
+  z-index: 1;
+  padding-top: 5%;
+}
+
+.abouthead::after {
+  content: "About Us";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(126, 192, 47);
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(62, 139, 188,0.7);
+  z-index: 1;
+  padding-top: 5%;
+}
+
+.contacthead::after {
+  content: "Contact Us";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(126, 192, 47);
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(62, 139, 188,0.7);
+  z-index: 1;
+  padding-top: 5%;
+}
+
+.bookhead h1{
+  color:white;
+}
+
+.formbook h5{
+  color: rgb(29, 55, 104);
   font-weight: bold;
 }
-.left-column{
-  margin-left: 35px;
-  margin-top: 80px;
-}
-.left-column1{
-  margin-left: 35px;
-  margin-top: 80px;
-}
 
-
-@media screen and (max-width: 800px) {
-  .Title{
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: -70px;
-  }
-  .joinover{
-    width: 100%;
-    text-align: justify;
-  }
-  .smarttitle{
-    padding-left: 15px;
-  }
-  .signup{
-    margin-left:55px;
-  }
-  .pic{
-    width: "450px";
-    height: "250px";
-    margin-left: 17px;
-  }
-  .left-column{
-    margin-left: -2px;
-  }
-  .textcon{
-    padding: 20px;
-  }
-  .imgbottom{
-    width: "400px";
-    height: "400px";
-    margin-left: 28px;
-    box-shadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px";
-  }
-}
-.pic{
-   width: "760px";
-   height: "500px"
-}
-.textcon{
-  text-align: "justify";
-  font-size: "20px";
-  color: "#0e225a"
-}
-
-/* Column Layout of Features */
-.col-column {
-  float: left;
-  width: 50%;
-  margin-top: 80px;
-}
-
-/* Clear floats after the columns */
-.column-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .col-column {
-    width: 100%;
-  }
-  .col-column.imgquizes{
-    width:"200px";
-    height:"200px"
-  }
-}
-
-.quiz-container {
+.about{
   display: flex;
-  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
 }
 
-.quiz-left-column {
-  width: 30%;
+.right-about{
+  width:40%;
 }
 
-.quiz-right-column {
-  width: 70%;
+.left-about{
+  width:60%;
 }
 
-@media screen and (max-width: 768px) {
-  .quiz-left-column {
-    width: 100%;
-  }
-
-  .quiz-right-column {
-    width: 100%;
-  }
+.right-about img{
+  width:450px;
+  height:300px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 60px;
 }
 
-.myButton {
+.left-about h1{
+  color: rgb(126, 192, 47);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.left-about p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.headcarousel{
+  height:500px;
+}
+
+.mode{
+  margin-top: 8%;
+}
+
+.burglogo{
+  width: 110px;
+  margin-right: 10px;
+  height: 70px;
+}
+
+.navbar li.active a {
+  color: rgb(126, 192, 47); /* Set your desired active link color */
+}
+.links li.active a {
+  color: rgb(126, 192, 47); /* Set your desired active link color */
+}
+
+
+/* Popup */
+.alert {
+  position: fixed;
+  top: -150px;
+  left: 87%;
+  transform: translateX(-50%);
   width: 300px;
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  border-radius: 5px;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.alert.show {
+  top: 20px;
+  opacity: 1;
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  margin: 10px;
+  border-radius: 4px;
+  background-color: #ffc107;
+  color: #ffffff;
+}
+
+.alert-content > p {
+  margin: 0;
+}
+
+.alert-dismiss {
   cursor: pointer;
 }
 
-.myButton:hover {
-  background-color: lightgrey;
+.alert-dismiss:hover {
+  text-decoration: underline;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.impressum{
+  width:50%
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Responsive ness */
+@media only screen and (max-width:767px){
+  .impressum{
+    width:70%
+  }
+  .alert {
+    position: fixed;
+    top: -150px;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 300px;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s ease-out;
+  }
+  .headcarousel{
+    height:300px;
+  }
+  .carouselimg{
+    margin-left: 12px;
+  }
+  .links{
+    display: none;
+  }
+  .burglogo{
+    width: 80px;
+    margin-right: 10px;
+    height: 70px;
+
+  }
+  .links-mobile{
+    display:block;
+  }
+  .mode{
+    display: none;
+  }
+  .header h1{
+    font-size: 30px;
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+  .news{
+    width:85%;
+  }
+  .carouselimg{
+    height:250px;
+  }
+  .bookhead::after {
+    padding-top: 20%;
+  }
+  .about{
+    display: block;
+  }
+  .left-about{
+    width: 100%;
+    text-align: center;
+  }
+  .right-about{
+    width: 100%;
+  }
+  .right-about img{
+    width:260px;
+    height:150px;
+    margin-left: -10px;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
 }
 
